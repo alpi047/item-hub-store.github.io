@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {vertical-align: middle;}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+#learn-more {
+    text-decoration: none;
+    background-color: green;
+    width: auto;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+#learn-more:hover {
+    background-color:rgb(4, 88, 1);
+}
+
+.feature-item1 {
+    text-align: center;
+}
+
+.feature-item4 {
+    margin: 8px;
+}
+
+div.ullist {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.hero {
+    align-items: center;
+    padding: auto;
+    background-color: #f4f4f4;
+}
+
+.imgparty {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+
+footer a {
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+/*slidesshow container*/
+.mySlides {display:none;}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #ff0303;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+/* dot/titik */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;;
+}
+
+/* fading animation  */ 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
