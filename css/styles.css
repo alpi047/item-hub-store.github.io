@@ -1,24 +1,50 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-img {vertical-align: middle;}
-
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #444;
+    color: white;
     padding: 10px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.head-container{
+    margin: 12px;
 }
 
 #learn-more {
@@ -29,6 +55,7 @@ header h1 {
     border-radius: 6px;
     color: #fff;
 }
+
 #learn-more:hover {
     background-color:rgb(4, 88, 1);
 }
@@ -47,36 +74,34 @@ div.ullist {
     font-size: larger;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-nav h1 {
-    margin: 0;
-}
-
-.hero {
-    align-items: center;
-    padding: 10PX;
-    background-color: #f4f4f4;
-}
-
 .imgparty {
     display: block;
     margin: auto;
     padding: auto;
+    position: relative;
 }
 
+img {vertical-align: middle;}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #444;
+    color: white;
     text-align: center;
-    padding: 20px 10px;
-    width: 100%;
-    margin: 0;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        max-width: 100%;
+    }
 }
 
 
